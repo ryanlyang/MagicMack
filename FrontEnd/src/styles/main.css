@@ -1,271 +1,63 @@
-/*	
-  This is a reasonable starting point for the CSS in Mock.	
-  Positioning in CSS can sometimes be annoying to manage, so we've opted to 	
-  give you this starter CSS. Feel free to modify it as you wish, though.	
-*/	
-
-.repl {	
-    /* defines the flex container */	
-    display: flex;	
-
-    /* defines the direction of the container: column like layout*/	
-    flex-direction: column;	
-
-    /* defines items to be lined up in the center */	
-    align-items: center;	
-    justify-content: space-between;	
-    position:relative;	
-    min-height:95vh;    	
-}	
-
-.repl-history {   	
-        /* defines the flex container */	
-    display: flex;	
-
-    /* defines the direction of the container: column like layout*/	
-    flex-direction: column;	
-
-    /* defines items to be lined up in the center */	
-    align-items: center;   	
-    height:55vh;   	
-    margin: auto;	
-    display: block;	
-    overflow: scroll;    	
-}	
-
-.repl-input {        	
-    margin: auto;    	
-    height:10vh;	
-}	
-.repl-input input:hover{	
-    box-shadow: 2px 2px 2px #000000;	
-}	
-.repl-command-box {	
-    width: 97%;            	
-    margin: auto;	
-    display: block;	
-    font-size: 0.9em;	
-    border-radius: 10px;	
-    padding: 5px 10px;	
-}	
 button{	
-    margin: auto;	
-    display: block;	
-}	
-
-.header-div{
-    position: relative;
-}
-
-.h3-mod{
-    color: #FFB6C1;
-    text-shadow: 2px 2px 5px #000000;
-    position: absolute;
-    margin:0px;
-    top: -13px;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    z-index: 2000;
-
-    	
-} 
-
- table {	
-    border: 20px solid rgb(206, 131, 9 0.621);	
-    border-collapse: collapse;	
-    /* margin: 0 auto;	
-    width: auto;	
-    	
-    border-spacing: 60px;	
-    table-layout: fixed;	
-    width: 100%; */	
-} 	
-tr {	
-    height: 200px;	
-    max-height: 200px;
-    
-
-} 	
-
-
-
-td {	
-    border: 3px solid #C19875;	
-    vertical-align: top;	
-    max-height: 250px;	
-    max-width: 800px;	
-    text-align: left;
-
-    height: 250px;
-    width: 800px;	
-    	
-    white-space: normal;
-    	
-} 
-.scrollable-cell :hover{
-    position:relative;
-    overflow-y: visible;
-    background-color: rgb(56, 187, 174);
-    z-index: 20;
-}
-
-.compare-cell{
-    /*position:relative;*/
-    background-color: rgb(47, 150, 140);
-    /* color: orange; */
-    /*display: flex;*/
-    width: 1000px;
-}	
-.compare-cell :hover{
-    position:relative;
-    overflow-y: visible;
-    background-color: rgb(56, 187, 174);
-    z-index: 20;
-}
-.compare-cell .movie-title{
-    color: black;
-    text-shadow: 2px 2px 5px #ff0000;
-}
-
-
-/* .scrollable-cell {	
-    max-width: 400px;	
-    max-height: 400px;	
-}	  */
-
-.movie-title {	
-    color: #F2E3BC;
-    text-shadow: 2px 2px 5px #ff0000;
-    
-    /* text-shadow: 2px 2px 5px #414535; */
-}
-
-.movie-output {	
-    color: #213547;
-    text-shadow: 1px 1px 4px #e2a09f;
-
-}
-.movie-stats{
-    color: #213547;
-    text-shadow: 1px 1px 4px #e2a09f;
-    font-size:17px;
-    font-weight: bold;
-    
-}
-
-.similar-movie-container {
-    position: relative;
-    display: flex;
-    
-}
-
-
-.movie-info{
-    top:0;
-    align-self: center;
-    width: 600px; 
-    /*margin-right: 100px;*/
-}
-
-
-.similar-movie-button {
-    height: 50px;
-    width:90px;
-    font-size: 16px;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    bottom: 0;
-    left: 0; 
-
-    justify-content: space-between; /* Aligns items to the space between */
-    align-items: start;
-}
-
-.similar-button{
     display: inline-block;
-    font-size:18px;
-    height:120px;
-    width:90px;
-    padding: 4px;
+    border-radius: 8px;
+    border: none;
+    padding: 0.8em 3em;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: whitesmoke;
+    position:relative;
+    transition: .4s ease-in;
+    z-index: 1;
+    overflow: hidden;
 }
 
-
-
-.img-and-button{
-    display: flex;
-    width:135px;
+button:before,
+button:after{
+    
+    position:absolute;
+    content:"";
+    z-index: -1;
+    
 }
 
-.similar-movie-button button:hover {
-    color: rgb(162, 198, 194);
-    background-color: #17181c;
+.shine_button::after{
+    height:100%;
+    left: -35%;
+    top: 0;
+    transform: skew(40deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+    
+    
+}
+.shine_button:hover:after{
+    height:100%;
+    width: 135%;
+    background-color: rgb(218, 164, 28);
 }
 
-
-
-.description-div {	
-    max-height: 250px;	
-    overflow-y: hidden;	
+.shine_button2::after{
+    height:100%;
+    left: -35%;
+    top: 0;
+    transform: skew(40deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+    
+    
+}
+img{
+    height: 400px;
+    width: 400px;
 }
 
-.button-container {	
-    padding: 10px 15px;	
-    display: flex;	
-    /*justify-content: center;*/	
-    position: absolute;	
-    top: 0; /* Aligns to the top of the form-container. Adjust as needed */	
-    right:0;	
-    /*width: 140px;*/	
-}	
-.button-container button {	
-    margin: 0 10px;	
-}	
-fieldset {	
-    width: 60%;	
-    margin: left;	
-    padding: 5px; 	
-}	
-.form-container {	
-    position: relative;	
-    padding-left: 30px;	
-    /*padding-right: 150px;*/	
-}	
-.in-box{	
-    padding: 4px;	
-    text-align: center;	
-}	
+.shine_button2:hover:after{
+    height:100%;
+    width: 135%;
+    background-color: rgb(152, 148, 148);
+}
 
-img {	
-    border: 4px solid #F2E2BC;	
-    border-radius: 4px;	
-    padding: 0px;	
-    width: auto;	
-    max-width: 100px;	
-    height: auto;	
-    max-height: 160px;	
-    margin:10px;
-  }	
-
-  .center{	
-    margin-left: auto;	
-    margin-right: auto;	
-  }	
-
-  .loader {
-    border: 20px solid #f3f3f3; /* Light grey background */
-    border-top: 20px solid #3498db; /* Blue color for the spinning part */
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: spin 2s linear infinite;
-    margin:auto;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }

@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import Searcher from './SearcherParts/Searcher';
+import Header from './Header';
 
 /**
  * This is the highest level component!
@@ -8,12 +8,10 @@ function App() {
   return (
     <div className="App">
       
-      <div className="Movie Mapper"
-      aria-lable = "Header for Movie Mapper"
-      aria-description = "Movie Searcher">
-        <h1 className="App-header"> Movie Mapper</h1>
-      </div>
-      <Searcher />      
+    
+      <Header/>
+  
+      
     </div>
   );
 }
