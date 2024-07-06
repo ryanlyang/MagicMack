@@ -54,7 +54,7 @@ li{
 .hover-image-container{
   /* position: relative; */
   width: 50%;
-  height: 2px;
+  height: 3px;
   overflow-x: hidden;
 
   /* transition: width 0.5s ease; */
