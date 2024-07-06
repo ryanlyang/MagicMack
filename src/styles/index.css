@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  /* background: linear-gradient(180deg, #E5B80B, rgb(0, 0, 0)); */
+  background-color: black;
+  display: flex;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* height: 100vh;
+  width: 100vw; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#root{
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.all_container {
+  width: 100%;
+  background-color: black;
+}

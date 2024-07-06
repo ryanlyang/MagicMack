@@ -1,0 +1,121 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 2px 4px white;
+  z-index: 1000;
+  height: 54px;
+}
+  
+.fixed-header h1 {
+  margin: 0;
+  padding: 1rem;
+}
+  
+.fixed-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+  
+.fixed-header nav ul li {
+  padding: 1rem;
+}
+  
+.fixed-header nav ul li a {
+  text-decoration: none;
+}
+
+h1{
+  color: whitesmoke;
+}
+
+li{
+  font-size: 16px;
+}
+.fixed-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* This will center the nav items horizontally */
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.button-container:hover{
+  color: gold;
+}
+
+.hover-image-container{
+  /* position: relative; */
+  width: 50%;
+  height: 2px;
+  overflow-x: hidden;
+
+  /* transition: width 0.5s ease; */
+}
+
+.hover-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.hover-image-bottom {
+  display: block;
+  /* width: 100%;
+  height: auto; */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  margin-top: 0;
+  /* animation: reveal-bottom 0.5s forwards; */
+}
+
+.hover-image-top {
+  display: block;
+  /* width: 100%;
+  height: auto; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+  /* animation: reveal-top 0.5s forwards; */
+}
+
+
+.button-container:hover .hover-image-container {
+  /* display: block; */
+  width: 100%;
+}
+
+
+/* .button-container:hover .hover-image-top {
+  display: block;
+  width: 100%;
+} */
+
+@keyframes reveal-top {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes reveal-bottom {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
