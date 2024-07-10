@@ -4,7 +4,8 @@ import '../styles/home.css';
 const Home: React.FC = () => {
   return (
     <div className='home_container'>
-      <p>Home</p>
+      <img id="Magic-Mack-logo" src="/MagicMackLogo.png" alt="Mack Logo" className="MagicMackLogo"
+                ></img>
     </div>
   );
 };

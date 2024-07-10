@@ -2,6 +2,12 @@ p {
     color: whitesmoke;
 }
 
-.home_container{
-    margin-top: 54px;
+/* .home_container{
+    top: -60%;
+} */
+
+.MagicMackLogo{
+    width: 280px;
+    height: auto;
+    align-self: flex-start;
 }
