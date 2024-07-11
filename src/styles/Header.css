@@ -58,10 +58,11 @@ li{
 .button-container {
   position: relative;
   display: flex;
-  padding: 1rem;
+  padding: 0.9rem;
 
   flex-direction: column;
   justify-content: center;
+  
 }
 .button-container:hover{
   color: gold;
@@ -138,9 +139,9 @@ li{
 .button-container:hover .hover-image-container-bottom {
   opacity: 100%;
 }
-.button-container:hover .hover-image-container-home {
+.button-container:hover .hover-image-container-book {
   /* display: block; */
-  width: 75.59px;
+  width: 76px;
 }
 .button-container:hover .hover-image-container-about {
   width: 36.92px;
@@ -155,10 +156,10 @@ li{
   width: 100%;
 } */
 
-.home-site-click{
+/* .home-site-click{
   width: 75.59px;
   min-width: 75.59px;
-}
+} */
 
 .about-click{
   width: 36.92px;
@@ -168,6 +169,11 @@ li{
 .gallery-click{
   width: 40.95px;
   min-width: 40.95px;
+}
+
+.book-click{
+  width: 76px;
+  min-width: 76px;
 }
 
 .facebook{

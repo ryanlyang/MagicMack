@@ -91,14 +91,14 @@ const Header: React.FC = () => {
           </li>
           <li>
             <div className='button-container'>
-              <div className="hover-image-container-top hover-image-container-gallery">
+              <div className="hover-image-container-top hover-image-container-book">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
-                "hover-image-top gallery-click"></img>
+                "hover-image-top book-click"></img>
               </div>
-              <Link to={'contact'}>Contact</Link>
-              <div className="hover-image-container-bottom hover-image-container-gallery">
+              <Link to={'contact'}>Book Today</Link>
+              <div className="hover-image-container-bottom hover-image-container-book">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
-                "hover-image-bottom gallery-click"></img>
+                "hover-image-bottom book-click"></img>
               </div>
             </div>
           </li>

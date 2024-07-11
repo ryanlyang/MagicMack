@@ -2,12 +2,70 @@ p {
     color: whitesmoke;
 }
 
-/* .home_container{
-    top: -60%;
-} */
+.home_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+}
+
+.top_container{
+    display: flex;
+    justify-content: space-between; /* Distributes items with space between them */
+    width: 100%;
+}
 
 .MagicMackLogo{
-    width: 280px;
-    height: auto;
+    width: 250px;
+    height: 125px;
     align-self: flex-start;
+
+    margin-left: 40px;
+    margin-top: 10px;
 }
+
+.AutoDetail{
+    width: auto;
+    height: 140px;
+    align-self: flex-start;
+
+    margin-right: 6px;
+    margin-top: 5px;
+}
+
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #000;
+
+    margin-top: 50px;
+}
+
+.image-wrapper {
+    display: inline-block;
+    width: calc(200%); /* Adjust this to ensure the wrapper is twice as wide as the viewport */
+    animation: scroll 30s linear infinite; 
+}
+
+.image-wrapper img {
+    width: 200px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    margin: 10px;
+    display: inline-block;
+
+    border-radius: 10px;
+    border: 3px solid #d3d3d3;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-1980px);
+    }
+    100% {
+        transform: translateX(0px);
+      
+    }
+  }
