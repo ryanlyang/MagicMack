@@ -14,40 +14,20 @@ const images = [
   { dirty: '/Sliding_Images/THhrtkgF.jpg', clean: '/Sliding_Images/clean9.jpg' }
 ];
 
+const images2 = [
+  { dirty: '/Sliding_Images/dirty10.png', clean: '/Sliding_Images/clean10.png' },
+  { dirty: '/Sliding_Images/dirty11.jpg', clean: '/Sliding_Images/clean11.jpg' },
+  { dirty: '/Sliding_Images/dirty12.jpg', clean: '/Sliding_Images/clean12.jpg' },
+  { dirty: '/Sliding_Images/dirty13.jpg', clean: '/Sliding_Images/clean13.jpg' },
+  { dirty: '/Sliding_Images/dirty14.jpg', clean: '/Sliding_Images/clean14.jpg' },
+  { dirty: '/Sliding_Images/dirty15.jpg', clean: '/Sliding_Images/clean15.jpg' },
+  { dirty: '/Sliding_Images/dirty16.jpg', clean: '/Sliding_Images/clean16.jpg' },
+  { dirty: '/Sliding_Images/dirty17.jpg', clean: '/Sliding_Images/clean17.jpg' },
+  { dirty: '/Sliding_Images/dirty18.jpg', clean: '/Sliding_Images/clean18.jpg' }
+];
+
+
 const Home: React.FC = () => {
-
-  // useEffect(() => {
-  //   const images = document.querySelectorAll('.image-wrapper img');
-  //   const halfScreenWidth = window.innerWidth / 2;
-
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         const img = entry.target as HTMLImageElement;
-  //         if (entry.intersectionRatio > 0.5) {
-  //           img.src = img.dataset.clean!;
-  //         } else {
-  //           img.src = img.dataset.dirty!;
-  //         }
-  //       });
-  //     },
-  //     {
-  //       root: null,
-  //       rootMargin: '0px',
-  //       threshold: [0, 0.5, 1]
-  //     }
-  //   );
-
-  //   images.forEach((img) => {
-  //     observer.observe(img);
-  //   });
-
-  //   return () => {
-  //     images.forEach((img) => {
-  //       observer.unobserve(img);
-  //     });
-  //   };
-  // }, []);
 
 
   return (
@@ -60,17 +40,58 @@ const Home: React.FC = () => {
         <img id="Auto-Detail-logo" src="/AutoDetailing1.png" alt="Auto Logo" className="AutoDetail"
                 ></img>
       </div>
-      <div className="image-container">
-        <div className="image-wrapper">
-          {images.map((image, index) => (
-            <img key={index} src={image.dirty} data-dirty={image.dirty} data-clean={image.clean} alt={`Img ${index + 1}`} />
-          ))}
-          {images.map((image, index) => (
-            <img key={`duplicate-${index}`} src={image.dirty} data-dirty={image.dirty} data-clean={image.clean} alt={`Img ${index + 1}`} />
-          ))}
+      <div className='images-wrapper'>
+        <div className='images_left_box image-container'>
+          <div className="image-wrapper">
+            {images.map((image, index) => (
+              <img key={index} src={image.dirty} alt={`Img ${index + 1}`} />
+            ))}
+            {images.map((image, index) => (
+              <img key={`duplicate-${index}`} src={image.dirty} alt={`Img ${index + 1}`} />
+            ))}
+          </div>
+        
+        </div>
+        <div className='images_right_box image-container'>
+        
+          <div className="image-wrapper-right">
+            {images.map((image, index) => (
+              <img key={index} src={image.clean} alt={`Img ${index + 1}`} />
+            ))}
+            {images.map((image, index) => (
+              <img key={`duplicate-${index}`} src={image.clean} alt={`Img ${index + 1}`} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+      <div className='images-wrapper'>
+        <div className='images_left_box image-container' style={{marginTop: '-8px' }}>
+          <div className="image-wrapper">
+            {images2.map((image, index) => (
+              <img key={index} src={image.dirty} alt={`Img ${index + 1}`} />
+            ))}
+            {images2.map((image, index) => (
+              <img key={`duplicate-${index}`} src={image.dirty} alt={`Img ${index + 1}`} />
+            ))}
+          </div>
+        </div>
+        <div className='images_right_box image-container' style={{marginTop: '-8px' }}>
+        
+          <div className="image-wrapper-right">
+            {images2.map((image, index) => (
+              <img key={index} src={image.clean} alt={`Img ${index + 1}`} />
+            ))}
+            {images2.map((image, index) => (
+              <img key={`duplicate-${index}`} src={image.clean} alt={`Img ${index + 1}`} />
+            ))}
+          </div>
         </div>
       </div>
       
+      <img src="/MagicWand2.png" alt="Magic Wand" className="magic-wand" />
+
     </div>
   );
 };
