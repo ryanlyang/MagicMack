@@ -85,6 +85,7 @@ p {
 
     border-radius: 10px;
     border: 3px solid #d3d3d3;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7);
 }
 
 .images_left_box{
@@ -104,7 +105,7 @@ p {
 
 .magic-wand {
     position: absolute;
-    top: 56%; /* Center vertically */
+    top: 353.5448px; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to exact center */
     width: auto; /* Adjust size as needed */
@@ -116,8 +117,9 @@ p {
 .images-wrapper::after {
     content: '';
     position: absolute;
-    top: 20%;
-    bottom: 20%;
+    top: 20vh;
+    /* bottom: 20vh; */
+    height: 55vh;
     width: 8%;
     z-index: 5;
     pointer-events: none;
@@ -131,6 +133,16 @@ p {
 .images-wrapper::after {
     right: 0;
     background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.beauty_of_vehicle{
+    margin-top: 230px;
+    margin-left: 50px;
+}
+
+.Gold_chunk{
+    width: 600px;
+    left: 0;
 }
 
 @keyframes scroll {

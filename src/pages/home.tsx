@@ -92,6 +92,12 @@ const Home: React.FC = () => {
       
       <img src="/MagicWand2.png" alt="Magic Wand" className="magic-wand" />
 
+
+      <p className='beauty_of_vehicle'>Rediscover the Beauty of Your Vehicle</p>
+
+      <img id="Gold_chunk" src="/Gold chunk.png" alt="Gold chunk" className="Gold_chunk"
+                  ></img>
+
     </div>
   );
 };
