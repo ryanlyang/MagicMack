@@ -107,7 +107,7 @@ const Home: React.FC = () => {
 
         <div className="text_big_image">
           <h1>Rediscover the beauty of your vehicle.</h1>
-          <h2>PREMIUM AUTO DETAILING</h2>
+          <h2>HIGH QUALITY DETAILING</h2>
         </div>
       </div>
 
