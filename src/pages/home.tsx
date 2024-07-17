@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/home.css'; 
 import { Link } from "react-router-dom";
+import ImageCard from '../components/ImageCard';
 
 const images = [
   { dirty: '/Sliding_Images/cc185ee11c117276bb22e2fe40578769.jpg', clean: '/Sliding_Images/clean1.jpg' },
@@ -32,14 +33,14 @@ const Home: React.FC = () => {
 
   return (
     <div className='home_container'>
-      <div className='top_container'>
+      {/* <div className='top_container'>
         <Link to={`/`}>
           <img id="Magic-Mack-logo" src="/MagicMackLogo.png" alt="Mack Logo" className="MagicMackLogo"
                   ></img>
         </Link>
         <img id="Auto-Detail-logo" src="/AutoDetailing1.png" alt="Auto Logo" className="AutoDetail"
                 ></img>
-      </div>
+      </div> */}
       <div className='images-wrapper'>
         <div className='images_left_box image-container'>
           <div className="image-wrapper">
@@ -109,6 +110,18 @@ const Home: React.FC = () => {
           <h1>Rediscover the beauty of your vehicle.</h1>
           <h2>HIGH QUALITY DETAILING</h2>
         </div>
+      </div>
+
+      <ImageCard></ImageCard>
+
+      <div className='bottom_container'>
+
+      <img id="Bottom_left" src="/Bottom goldie.png" alt="Bottom left" 
+        className="bottom_left goldie"></img>
+
+      <img id="Bottom_right" src="/Bottom goldie.png" alt="Bottom right" 
+        className="bottom_right goldie"></img>
+      
       </div>
 
     </div>

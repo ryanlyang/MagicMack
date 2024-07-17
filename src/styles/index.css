@@ -25,3 +25,27 @@ main {
   /* width: 100%; */
   background-color: black;
 }
+
+.top_container{
+  display: flex;
+  justify-content: space-between; /* Distributes items with space between them */
+  width: 100%;
+}
+
+.MagicMackLogo{
+  width: 250px;
+  height: 125px;
+  align-self: flex-start;
+
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.AutoDetail{
+  width: auto;
+  height: 140px;
+  align-self: flex-start;
+
+  margin-right: 6px;
+  margin-top: 5px;
+}

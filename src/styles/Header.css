@@ -139,15 +139,24 @@ li{
 .button-container:hover .hover-image-container-bottom {
   opacity: 100%;
 }
-.button-container:hover .hover-image-container-book {
-  /* display: block; */
-  width: 76px;
+
+
+.button-container:hover .hover-image-container-home {
+  width: 34.91px;
 }
+.button-container:hover .hover-image-container-services {
+  width: 46.81px;
+}
+
 .button-container:hover .hover-image-container-about {
-  width: 36.92px;
+  width: 35.75px;
 }
 .button-container:hover .hover-image-container-gallery {
-  width: 40.95px;
+  width: 40.52px;
+}
+.button-container:hover .hover-image-container-book {
+  /* display: block; */
+  width: 67.06px;
 }
 
 
@@ -160,20 +169,28 @@ li{
   width: 75.59px;
   min-width: 75.59px;
 } */
+.home-click{
+  width: 34.91px;
+  min-width: 34.91px;
+}
+.services-click{
+  width: 46.81px;
+  min-width: 46.81px;
+}
 
 .about-click{
-  width: 36.92px;
-  min-width: 36.92px;
+  width: 35.75px;
+  min-width: 35.75px;
 }
 
 .gallery-click{
-  width: 40.95px;
-  min-width: 40.95px;
+  width: 40.52px;
+  min-width: 40.52px;
 }
 
 .book-click{
-  width: 76px;
-  min-width: 76px;
+  width: 67.06px;
+  min-width: 67.06px;
 }
 
 .facebook{

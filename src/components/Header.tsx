@@ -38,69 +38,79 @@ const Header: React.FC = () => {
       <nav>
         <ul>
         <li>
+            <Link to={`/`}>
             <div className="button-container">
-              <div className="hover-image-container-top hover-image-container-gallery">
+              <div className="hover-image-container-top hover-image-container-home">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
-                "hover-image-top gallery-click"></img>
+                "hover-image-top home-click"></img>
               </div>
-              <Link to={`/`}>Home</Link>
-              <div className="hover-image-container-bottom hover-image-container-gallery">
+              Home
+              <div className="hover-image-container-bottom hover-image-container-home">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
-                "hover-image-bottom gallery-click"></img>
+                "hover-image-bottom home-click"></img>
               </div>
             </div>
+            </Link>
           </li>
           <li>
+          <Link to={'services'}>
             <div className='button-container'>
+              <div className="hover-image-container-top hover-image-container-services">
+                <img src="/Gold glow resize.png" alt="Hover Image" className=
+                "hover-image-top services-click"></img>
+              </div>
+              Services
+              <div className="hover-image-container-bottom hover-image-container-services">
+                <img src="/Gold glow resize.png" alt="Hover Image" className=
+                "hover-image-bottom services-click"></img>
+              </div>
+            </div>
+            </Link>
+          </li>
+          <li>
+          <Link to={`gallery`}>
+            <div className="button-container">
               <div className="hover-image-container-top hover-image-container-gallery">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-top gallery-click"></img>
               </div>
-              <Link to={'services'}>Services</Link>
+              Gallery
               <div className="hover-image-container-bottom hover-image-container-gallery">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-bottom gallery-click"></img>
               </div>
             </div>
+            </Link>
           </li>
           <li>
-            <div className="button-container">
+          <Link to={'about'}>
+            <div className='button-container'>
               <div className="hover-image-container-top hover-image-container-about">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-top about-click"></img>
               </div>
-              <Link to={`gallery`}>Gallery</Link>
+              About
               <div className="hover-image-container-bottom hover-image-container-about">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-bottom about-click"></img>
               </div>
             </div>
+            </Link>
           </li>
           <li>
-            <div className='button-container'>
-              <div className="hover-image-container-top hover-image-container-gallery">
-                <img src="/Gold glow resize.png" alt="Hover Image" className=
-                "hover-image-top gallery-click"></img>
-              </div>
-              <Link to={'about'}>About</Link>
-              <div className="hover-image-container-bottom hover-image-container-gallery">
-                <img src="/Gold glow resize.png" alt="Hover Image" className=
-                "hover-image-bottom gallery-click"></img>
-              </div>
-            </div>
-          </li>
-          <li>
+          <Link to={'contact'}>
             <div className='button-container'>
               <div className="hover-image-container-top hover-image-container-book">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-top book-click"></img>
               </div>
-              <Link to={'contact'}>Book Today</Link>
+              Book Today
               <div className="hover-image-container-bottom hover-image-container-book">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-bottom book-click"></img>
               </div>
             </div>
+            </Link>
           </li>
           <li>
             {/* <div className='button-container'> */}

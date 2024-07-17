@@ -12,6 +12,7 @@ import ErrorPage from "./pages/error-page.tsx";
 import About from "./pages/about.tsx";
 import Home from "./pages/home.tsx";
 import Gallery from "./pages/gallery.tsx";
+import Services from "./pages/services.tsx";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 Amplify.configure(outputs);
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "gallery",
         element: <Gallery/>,
+      },
+      {
+        path: "services",
+        element: <Services/>
       },
     ],
   }
