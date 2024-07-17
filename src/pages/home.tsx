@@ -92,11 +92,24 @@ const Home: React.FC = () => {
       
       <img src="/MagicWand2.png" alt="Magic Wand" className="magic-wand" />
 
+      
 
-      <p className='beauty_of_vehicle'>Rediscover the Beauty of Your Vehicle</p>
-
-      <img id="Gold_chunk" src="/Gold chunk.png" alt="Gold chunk" className="Gold_chunk"
+      {/* <p className='beauty_of_vehicle'>Rediscover the Beauty of Your Vehicle</p> */}
+      <div className='big_pretty_container'>
+        <img id="Gold_squiggle_top" src="/Gold Squig9.png" alt="Gold squig" 
+        className="gold_squig gold_squig_top"></img>
+        <div className='big_pretty_wrapper'>
+          <img id="Big_Pretty" src="/BigPrettyShop.jpg" alt="Big Pretty" className="big_pretty"
                   ></img>
+        </div>
+        <img id="Gold_squiggle_bottom" src="/Gold Squig9.png" alt="Gold squig" 
+        className="gold_squig gold_squig_bottom"></img>
+
+        <div className="text_big_image">
+          <h1>Rediscover the beauty of your vehicle.</h1>
+          <h2>PREMIUM AUTO DETAILING</h2>
+        </div>
+      </div>
 
     </div>
   );
