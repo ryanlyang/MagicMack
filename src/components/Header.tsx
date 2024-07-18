@@ -119,7 +119,7 @@ const Header: React.FC = () => {
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
                 "hover-image-top gallery-click"></img>
               </div> */}
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.facebook.com/carshinesinme/" target="_blank" rel="noopener noreferrer" 
                 onMouseOver={() => handleMouseOver('facebook-icon', '/real gold facebook.png')} 
                 onMouseOut={() => handleMouseOut('facebook-icon', '/black facebook.png')} className='button-container-a'>
                 <img id="facebook-icon" src="/black facebook.png" alt="Facebook Logo" className="facebook"
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
             {/* </div> */}
           </li>
           <li>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.instagram.com/magicmacksautodetailing/" target="_blank" rel="noopener noreferrer" 
                 onMouseOver={() => handleMouseOver('instagram-icon', '/Instagram_logo_gold.png')} 
                 onMouseOut={() => handleMouseOut('instagram-icon', '/Instagram_logo_gray.png')} className='button-container-a'>
                 <img id="instagram-icon" src="/Instagram_logo_gray.png" alt="Instagram Logo" className="facebook"
