@@ -13,7 +13,7 @@ const Services: React.FC = () => {
         </TabList>
         <TabPanels>
           <TabPanel>
-            <Flex align="center" justify="center" height="1000px">
+            <Flex align="center" justify="center" height="1005px">
               <Image src="/Services/interior_page.jpg" alt="Image 1" maxWidth="100%" maxHeight="100%" objectFit="contain" />
             </Flex>
           </TabPanel>

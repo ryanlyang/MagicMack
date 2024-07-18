@@ -28,6 +28,7 @@ const Header: React.FC = () => {
       }, 125); // Half of the transition duration for smooth effect
     }
   };
+  //zoom
 
 
   
