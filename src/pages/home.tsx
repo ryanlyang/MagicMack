@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/home.css'; 
 import ImageCard from '../components/ImageCard';
 
@@ -28,6 +28,17 @@ const images2 = [
 
 
 const Home: React.FC = () => {
+
+  const [highlightPosition, setHighlightPosition] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setHighlightPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
 
 
   return (
@@ -96,19 +107,46 @@ const Home: React.FC = () => {
 
       {/* <p className='beauty_of_vehicle'>Rediscover the Beauty of Your Vehicle</p> */}
       <div className='big_pretty_container'>
-        <img id="Gold_squiggle_top" src="/Gold Squig9.png" alt="Gold squig" 
-        className="gold_squig gold_squig_top"></img>
-        <div className='big_pretty_wrapper'>
-          <img id="Big_Pretty" src="/BigPrettyShop.jpg" alt="Big Pretty" className="big_pretty"
-                  ></img>
-        </div>
-        <img id="Gold_squiggle_bottom" src="/Gold Squig9.png" alt="Gold squig" 
-        className="gold_squig gold_squig_bottom"></img>
+        
+        <div className='big_pretty_wrapper'
+         onMouseMove={handleMouseMove}
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}>
+          <img id="Big_Pretty" src="/BigPrettyShop.jpg" alt="Big Pretty" className="big_pretty" />
 
-        <div className="text_big_image">
-          <h1>Rediscover the beauty of your vehicle.</h1>
-          <h2>HIGH QUALITY DETAILING</h2>
+          <img id="Gold_squiggle_top" src="/Gold Squig9.png" alt="Gold squig" 
+        className="gold_squig gold_squig_top"></img>
+
+          {isHovered && (
+              <div
+                className="highlight"
+                style={{ top: highlightPosition.y, left: highlightPosition.x }}
+              />
+            )}
+
+
+          {/* <div className="overlay_pretty">
+            {isHovered && (
+              <div
+                className="highlight"
+                style={{ top: highlightPosition.y, left: highlightPosition.x }}
+              />
+            )}
+          </div> */}
+
+          <div className="text_big_image">
+            <h1>Rediscover the beauty of your vehicle.</h1>
+            <h2>HIGH QUALITY DETAILING</h2>
+          </div>
+
+          <img id="Gold_squiggle_bottom" src="/Gold Squig9.png" alt="Gold squig" 
+        className="gold_squig gold_squig_bottom"></img>
+          
         </div>
+        
+        
+
+        
       </div>
 
       <ImageCard></ImageCard>
