@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/home.css'; 
 import ImageCard from '../components/ImageCard';
+import Reviews from '../components/Reviews';
 
 const images = [
   { dirty: '/Sliding_Images/cc185ee11c117276bb22e2fe40578769.jpg', clean: '/Sliding_Images/clean1.jpg' },
@@ -150,6 +151,8 @@ const Home: React.FC = () => {
       </div>
 
       <ImageCard></ImageCard>
+
+      <Reviews></Reviews>
 
       <div className='bottom_container'>
 
