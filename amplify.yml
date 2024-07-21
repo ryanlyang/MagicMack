@@ -13,6 +13,8 @@ frontend:
         - npm install react-router-dom
         - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
         - npm install @chakra-ui/icons
+        - npm install react-transition-group
+        - npm install --save-dev @types/react-transition-group
   artifacts:
     baseDirectory: dist
     files:
