@@ -152,7 +152,9 @@ const Home: React.FC = () => {
 
       <ImageCard></ImageCard>
 
-      <Reviews></Reviews>
+      <div className='reviews-things'>
+        <Reviews></Reviews>
+      </div>
 
       <div className='bottom_container'>
 

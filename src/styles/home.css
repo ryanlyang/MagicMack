@@ -281,6 +281,10 @@ p {
     transform: scaleX(-1);
 }
 
+.reviews-things{
+    margin-top: 55px;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(-154.6875%);

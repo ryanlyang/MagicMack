@@ -1,6 +1,6 @@
 .reviews-slider {
     display: flex;
-    transition: transform 500ms ease-in-out;
+    transition: transform 0.75s ease-in-out;
   }
   
   .slide-right-enter {
@@ -28,4 +28,3 @@
   .slide-left-exit-active {
     transform: translateX(100%);
   }
-  
