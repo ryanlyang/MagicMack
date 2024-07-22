@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Box, Text, HStack, VStack, IconButton, Heading } from '@chakra-ui/react';
 import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
