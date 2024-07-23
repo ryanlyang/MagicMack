@@ -82,7 +82,7 @@ const Reviews = () => {
               minHeight: '60px',
               backgroundColor: 'gray.800',
               _hover: {
-                backgroundColor: 'gold',
+                backgroundColor: '#d4af37',
                 color: 'black',
               },
             }}
@@ -141,7 +141,7 @@ const Reviews = () => {
               minHeight: '60px',
               backgroundColor: 'gray.800',
               _hover: {
-                backgroundColor: 'gold',
+                backgroundColor: '#d4af37',
                 color: 'black',
               },
             }}
