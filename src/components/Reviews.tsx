@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Box, Text, HStack, VStack, IconButton, Heading } from '@chakra-ui/react';
 import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -47,21 +47,19 @@ const Reviews = () => {
   }, [direction, pendingIndex, currentIndex]);
 
   const handlePrevClick = () => {
-    if(!isAnimating){
+    if (!isAnimating) {
       setDirection('left');
       setPendingIndex(currentIndex === 0 ? Math.max(reviews.length - 2, 0) : currentIndex - 2);
       setIsAnimating(true);
     }
-    
   };
 
   const handleNextClick = () => {
-    if(!isAnimating){
+    if (!isAnimating) {
       setDirection('right');
       setPendingIndex(currentIndex >= reviews.length - 2 ? 0 : currentIndex + 2);
-      setIsAnimating(true);  
+      setIsAnimating(true);
     }
-    
   };
 
   const handleAnimationEnd = () => {
@@ -73,23 +71,23 @@ const Reviews = () => {
       <VStack spacing={4} align="center">
         <Heading as="h2" size="xl" mb={2} color="white">Highly Recommended</Heading>
         <Text>We focus on quality and the care of your vehicle. Attention to Detail and Premium Quality is what our clients receive every time! Check out our Reviews below, to see what our clients say about us!</Text>
-        <HStack spacing={4} mt={8}>
+        <HStack spacing={2} mt={8}>
           <IconButton
             aria-label="Previous review"
-            icon={<ArrowBackIcon />}
+            icon={<ArrowBackIcon color="white" />} // Arrow icon white
             onClick={handlePrevClick}
             disabled={isAnimating}
             sx={{
               height: '60px',
               minHeight: '60px',
-              backgroundColor: 'gray.700',
+              backgroundColor: 'gray.800',
               _hover: {
-                backgroundColor: '#545454',
-                color: 'white',
+                backgroundColor: 'gold',
+                color: 'black',
               },
             }}
           />
-          <Box position="relative" width="900px" height="250px" overflow="hidden">
+          <Box position="relative" width="800px" height="250px" overflow="hidden">
             <TransitionGroup component={null}>
               <CSSTransition
                 key={currentIndex}
@@ -110,18 +108,21 @@ const Reviews = () => {
                     <Box
                       key={index}
                       p={4}
-                      borderWidth="1px"
+                      borderWidth="4px" // Thicker border
                       borderRadius="lg"
                       boxShadow="sm"
                       minWidth="350px"
                       height="250px"
                       minHeight="250px"
-                      bg="gray.800"
+                      bg="black"
+                      borderColor="gray" // White border
                       overflowY="auto"
                     >
                       <HStack justifyContent="space-between">
-                        <Text>{'⭐'.repeat(review.rating)}</Text>
-                        <Text fontWeight="bold">{review.platform}</Text>
+                        <Text color="gold">{'⭐'.repeat(review.rating)}</Text>
+                        <Text>
+                          Posted on <Text as="span" color="gray.400">{review.platform}</Text>
+                        </Text>
                       </HStack>
                       <Text mt={2}>{review.review_text}</Text>
                     </Box>
@@ -132,16 +133,16 @@ const Reviews = () => {
           </Box>
           <IconButton
             aria-label="Next review"
-            icon={<ArrowForwardIcon />}
+            icon={<ArrowForwardIcon color="white" />} // Arrow icon white
             onClick={handleNextClick}
             disabled={isAnimating}
             sx={{
               height: '60px',
               minHeight: '60px',
-              backgroundColor: 'gray.700',
+              backgroundColor: 'gray.800',
               _hover: {
-                backgroundColor: '#545454',
-                color: 'white',
+                backgroundColor: 'gold',
+                color: 'black',
               },
             }}
           />

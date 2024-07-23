@@ -16,7 +16,7 @@
   align-items: center; /* Center vertically */
   width: 100%;
   max-width: 1200px;
-  margin: 90px auto 20px; /* Center the container itself */
+  margin: 170px auto 20px; /* Center the container itself */
   gap: 20px; /* Add space between the items */
 }
 

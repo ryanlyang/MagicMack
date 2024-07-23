@@ -14,13 +14,24 @@ import Home from "./pages/home.tsx";
 import Gallery from "./pages/gallery.tsx";
 import Services from "./pages/services.tsx";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import ScrollToTop from "./components/ScrollToTop.tsx";
+import useScrollToTop from "./components/UseScrollToTop.tsx";
 
 Amplify.configure(outputs);
+
+const MainApp = () => {
+  useScrollToTop();
+  return <App />;
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: (
+      <ScrollToTop>
+        <MainApp />
+      </ScrollToTop>
+    ),
     errorElement: <ErrorPage />,
     children: [
       {

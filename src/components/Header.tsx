@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import '../styles/Header.css';
-import { Link } from "react-router-dom";
+
 
 
 const Header: React.FC = () => {
+
+  const location = useLocation();
+
+  const handleLinkClick = (path: string) => {
+    if (location.pathname === path) {
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const getLinkClass = (path: string) => {
+    return location.pathname === path ? 'active-link' : '';
+  };
+
+
   // Function to handle mouse over
   // Function to handle mouse over
   const handleMouseOver = (id :string, picture :string) => {
@@ -39,7 +54,7 @@ const Header: React.FC = () => {
       <nav>
         <ul>
         <li>
-            <Link to={`/`}>
+            <Link to={`/`} onClick={() => handleLinkClick('/')} className={getLinkClass('/')}>
             <div className="button-container">
               <div className="hover-image-container-top hover-image-container-home">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
@@ -54,7 +69,7 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-          <Link to={'services'}>
+          <Link to={'services'} onClick={() => handleLinkClick('/services')} className={getLinkClass('/services')}>
             <div className='button-container'>
               <div className="hover-image-container-top hover-image-container-services">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
@@ -69,7 +84,7 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-          <Link to={`gallery`}>
+          <Link to={`gallery`}  onClick={() => handleLinkClick('/gallery')} className={getLinkClass('/gallery')}>
             <div className="button-container">
               <div className="hover-image-container-top hover-image-container-gallery">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
@@ -84,7 +99,7 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-          <Link to={'about'}>
+          <Link to={'about'} onClick={() => handleLinkClick('/about')} className={getLinkClass('/about')}>
             <div className='button-container'>
               <div className="hover-image-container-top hover-image-container-about">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=

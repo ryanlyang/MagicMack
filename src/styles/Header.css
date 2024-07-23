@@ -224,3 +224,12 @@ li{
   background: transparent; /* Transparent background */
   z-index: 1; /* Ensure the overlay is on top of the image */
 }
+
+.active-link {
+  color: gold !important;
+}
+
+.active-link .hover-image-container-top,
+.active-link .hover-image-container-bottom {
+  opacity: 100%;
+}
