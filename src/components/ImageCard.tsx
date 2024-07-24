@@ -10,14 +10,14 @@ type ImageProps = {
 
 const images: ImageProps[] = [
   {
-    src: '/BigPrettyShinyBordered2.png',
-    title: 'Exterior',
-    description: 'This is the description for image 1.',
-  },
-  {
     src: 'Interior-bordered.png',
     title: 'Interior',
     description: 'This is the description for image 2.',
+  },
+  {
+    src: '/BigPrettyShinyBordered2.png',
+    title: 'Exterior',
+    description: 'This is the description for image 1.',
   },
   {
     src: '/BigPrettyShinyBordered2.png',

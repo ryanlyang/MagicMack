@@ -156,15 +156,6 @@ const Home: React.FC = () => {
         <Reviews></Reviews>
       </div>
 
-      <div className='bottom_container'>
-
-      <img id="Bottom_left" src="/Bottom goldie.png" alt="Bottom left" 
-        className="bottom_left goldie"></img>
-
-      <img id="Bottom_right" src="/Bottom goldie.png" alt="Bottom right" 
-        className="bottom_right goldie"></img>
-      
-      </div>
 
     </div>
   );
