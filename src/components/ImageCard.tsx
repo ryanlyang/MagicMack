@@ -38,7 +38,7 @@ const ImageCard: React.FC = () => {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`gallery-item ${hoveredIndex === index ? 'hovered' : ''}`}
+          className={`card-item ${hoveredIndex === index ? 'hovered' : ''}`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

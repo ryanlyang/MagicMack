@@ -16,6 +16,7 @@ import Services from "./pages/services.tsx";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import useScrollToTop from "./components/UseScrollToTop.tsx";
+import PrivacyPolicy from "./pages/privacy-policy.tsx";
 
 Amplify.configure(outputs);
 
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
         path: "services",
         element: <Services/>
       },
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy/>
+      }
     ],
   }
 ]);

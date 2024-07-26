@@ -33,8 +33,13 @@ function App() {
       <img id="Bottom_Logo" src="/MagicMackCarLogo3.jpg" alt="Bottom center" className="bottom_center logo_bottom">
       </img>
 
+      <div className="copyright_bottom bottom_center">Copyright © 2024 Magic Mack's | All rights reserved |  
+      <Link to={`privacy-policy`} className="privacy_policy"> Privacy Policy</Link></div>
+
       <img id="Bottom_right" src="/Bottom goldie.png" alt="Bottom right" 
         className="bottom_right goldie"></img>
+
+      
       
       </div>
       

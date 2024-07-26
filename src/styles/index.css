@@ -68,6 +68,13 @@ main {
   transform: translateX(-50%);
 }
 
+.copyright_bottom{
+  bottom: 0;
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 0.1em; 
+}
+
 .bottom_right {
   right: 0;
   transform: scaleX(-1);
@@ -76,5 +83,9 @@ main {
 .logo_bottom{
   height: 118.9px;
   position: absolute;
-  bottom: 0;
+  bottom: 17px;
+}
+
+.privacy_policy{
+  color: #0000FF;
 }

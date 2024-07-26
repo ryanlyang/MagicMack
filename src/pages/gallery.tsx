@@ -1,29 +1,61 @@
-import React from 'react';
-import '../styles/about.css'; 
+import React, { useState } from 'react';
+import '../styles/gallery.css';
+
+const images = [
+  '/Sliding_Images/cc185ee11c117276bb22e2fe40578769.jpg', '/Sliding_Images/clean1.jpg',
+  '/Sliding_Images/Depositphotos_5986223_XL-1-scaled.webp',  '/Sliding_Images/clean2.jpg', 
+   '/Sliding_Images/Dirty-Car-Contest-Winner.jpg', '/Sliding_Images/clean3.jpg',
+  '/Sliding_Images/dirty-car-royalty-free-image-1645811725.jpg',  '/Sliding_Images/clean4.jpg' ,
+   '/Sliding_Images/dirty-old-cars-2048x1152-primary-16x9-1.jpg',  '/Sliding_Images/clean5.png' ,
+  '/Sliding_Images/images.jpg',  '/Sliding_Images/clean6.jpg' ,
+  '/Sliding_Images/maxresdefault.jpg',  '/Sliding_Images/clean7.jpg' ,
+   '/Sliding_Images/need-car-wash.jpg',  '/Sliding_Images/clean8.jpg' ,
+  '/Sliding_Images/THhrtkgF.jpg',  '/Sliding_Images/clean9.jpg' 
+];
+
+
 
 const Gallery: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+
+  const openLightbox = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  const closeLightbox = () => {
+    setCurrentIndex(null);
+  };
+
+  const goToPrevious = () => {
+    if (currentIndex !== null && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const goToNext = () => {
+    if (currentIndex !== null && currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
   return (
-    <div className="about-container">
-      <h1>Gallery</h1>
-      <p>Welcome to our Gallery!</p>
-      <section className="mission-section">
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is to deliver high-quality products that bring value to our customers and make their lives better.
-        </p>
-      </section>
-      <section className="team-section">
-        <h2>Our Team</h2>
-        <p>
-          We have a diverse and talented team of professionals who are dedicated to achieving excellence in everything we do.
-        </p>
-      </section>
-      <section className="contact-section">
-        <h2>Contact Us</h2>
-        <p>
-          If you have any questions, feel free to reach out to us at <a href="mailto:contact@ourcompany.com">contact@ourcompany.com</a>.
-        </p>
-      </section>
+    <div className="gallery">
+      {images.map((src, index) => (
+        <div key={index} className="gallery-item" onClick={() => openLightbox(index)}>
+          <img src={src} alt={`Gallery Image ${index + 1}`} />
+        </div>
+      ))}
+
+      {currentIndex !== null && (
+        <div className="lightbox">
+          <div className="lightbox-content">
+            <img src={images[currentIndex]} alt={`Gallery Image ${currentIndex + 1}`} />
+            <button className="lightbox-close" onClick={closeLightbox}>X</button>
+            {currentIndex > 0 && <button className="lightbox-prev" onClick={goToPrevious}>&lt;</button>}
+            {currentIndex < images.length - 1 && <button className="lightbox-next" onClick={goToNext}>&gt;</button>}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
