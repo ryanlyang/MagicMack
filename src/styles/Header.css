@@ -65,7 +65,7 @@ li{
   
 }
 .button-container:hover{
-  color: gold;
+  color: #F1CC5F;
 }
 
 .hover-image-container-top{
@@ -226,7 +226,7 @@ li{
 }
 
 .active-link {
-  color: gold !important;
+  color: #F1CC5F !important;
 }
 
 .active-link .hover-image-container-top,

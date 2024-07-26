@@ -103,6 +103,8 @@
 }
 
 .learn-more:hover {
-  background: linear-gradient(45deg, #FFD700, #FFA500);
+  /* background: linear-gradient(45deg, #FFDB91, #DCA457, #BB792B); */
+  background: #F1CC5F;
   color: black;
+  text-decoration: none;
 }

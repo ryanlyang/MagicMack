@@ -149,7 +149,7 @@ const Reviews = () => {
                     >
                       <HStack justifyContent="space-between">
                         <Text color="gold">{'⭐'.repeat(review.rating)}</Text>
-                        <Text>
+                        <Text fontSize={14}>
                           Posted on <Text as="span" color="gray.400">{review.platform}</Text>
                         </Text>
                       </HStack>

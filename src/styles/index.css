@@ -1,17 +1,12 @@
 body {
   margin: 0;
-  /* background: linear-gradient(180deg, #E5B80B, rgb(0, 0, 0)); */
   background-color: black;
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* height: 100vh;
-  width: 100vw; */
   justify-content: center;
-  /* align-items: center; */
-  /* height: 100%; */
 }
 
-#root{
+#root {
   width: 100%;
 }
 
@@ -22,57 +17,63 @@ main {
 }
 
 .all_container {
-  /* width: 100%; */
   background-color: black;
 }
 
-.top_container{
+.top_container {
   display: flex;
-  justify-content: space-between; /* Distributes items with space between them */
+  justify-content: space-between;
   width: 100%;
 }
 
-.MagicMackLogo{
+.MagicMackLogo {
   width: 250px;
   height: 125px;
   align-self: flex-start;
-
   margin-left: 40px;
   margin-top: 10px;
 }
 
-.AutoDetail{
+.AutoDetail {
   width: auto;
   height: 140px;
   align-self: flex-start;
-
   margin-right: 6px;
   margin-top: 5px;
 }
 
-.bottom_container{
-
+.bottom_container {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
   width: 100%;
-
   margin-top: 200px;
 }
 
-.goldie{
+.goldie {
   width: 25%;
   height: auto;
   position: absolute;
   bottom: 0;
 }
 
-.bottom_left{
+.bottom_left {
   left: 0;
 }
 
-.bottom_right{
+.bottom_center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom_right {
   right: 0;
   transform: scaleX(-1);
+}
+
+.logo_bottom{
+  height: 118.9px;
+  position: absolute;
+  bottom: 0;
 }

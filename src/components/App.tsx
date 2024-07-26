@@ -30,6 +30,9 @@ function App() {
       <img id="Bottom_left" src="/Bottom goldie.png" alt="Bottom left" 
         className="bottom_left goldie"></img>
 
+      <img id="Bottom_Logo" src="/MagicMackCarLogo3.jpg" alt="Bottom center" className="bottom_center logo_bottom">
+      </img>
+
       <img id="Bottom_right" src="/Bottom goldie.png" alt="Bottom right" 
         className="bottom_right goldie"></img>
       
