@@ -11,21 +11,21 @@ type ImageProps = {
 
 const images: ImageProps[] = [
   {
-    src: 'Interior-bordered.png',
+    src: '/Services/Interior-example.jpg',
     title: 'Interior',
-    description: 'This is the description for image 2.',
+    description: "Get a meticulously clean car interior with our premium detailing service. We use top-quality chemicals to clean seats, windows, and all surfaces, ensuring a spotless and fresh ride every time.",
     tab: 'interior', // Specify the tab identifier
   },
   {
-    src: '/BigPrettyShinyBordered2.png',
+    src: '/Services/Exterior.jpg',
     title: 'Exterior',
-    description: 'This is the description for image 1.',
+    description: 'Get a spotless car exterior with our premium detailing service. Using the 3-bucket method, we thoroughly wash and protect your vehicle, ensuring a clean and glossy finish every time.',
     tab: 'exterior', // Specify the tab identifier
   },
   {
-    src: '/BigPrettyShinyBordered2.png',
+    src: '/Services/Ceramic.jpg',
     title: 'Ceramic Coatings',
-    description: 'This is the description for image 3.',
+    description: 'Enhance and protect your vehicle with our ceramic coating service. This durable layer shields your paint from contaminants and UV rays, ensuring a long-lasting, glossy finish that keeps your car looking new.',
     tab: 'ceramic', // Specify the tab identifier
   },
 ];

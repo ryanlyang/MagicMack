@@ -109,6 +109,7 @@
 
     text-align: center; /* Center the text */
     display: block;
+    z-index: 10;
   }
   
   .contact-button:hover {
