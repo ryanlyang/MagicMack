@@ -105,8 +105,10 @@
     transition: background-color 0.3s ease;
     width: 220px;
 
-
     border-radius: 10px;
+
+    text-align: center; /* Center the text */
+    display: block;
   }
   
   .contact-button:hover {
