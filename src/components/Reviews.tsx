@@ -94,7 +94,7 @@ const Reviews = () => {
   };
 
   return (
-    <Box bg="black" color="white" py={10} px={5}>
+    <Box bg="black" color="white" py={10} px={5} mb = {140}>
       <VStack spacing={4} align="center">
         <Heading as="h2" size="xl" mb={2} color="white">Highly Recommended</Heading>
         <Box maxW="800px" textAlign="center">
