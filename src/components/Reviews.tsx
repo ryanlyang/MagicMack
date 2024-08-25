@@ -12,6 +12,11 @@ interface Review {
 
 const reviews: Review[] = [
   {
+    review_text: "Mack again did a wonderful job on my truck! It’s two years old hasn’t been cleaned made it look like new again! Thanks again Mack! Keep up the good work!",
+    platform: "Google Buisnesses",
+    rating: 5,
+  },
+  {
     review_text: "Super impressed with my Edge! She was lookin’ rough and is now sparkling. Can’t wait to come back again.",
     platform: "Facebook",
     rating: 5,
@@ -27,6 +32,11 @@ const reviews: Review[] = [
     rating: 5,
   },
   {
+    review_text: "Mack provides only the highest quality work and always exceeds expectations. I highly recommend getting a ceramic coating too. Beautiful mirror finish.",
+    platform: "Google Buisnesses",
+    rating: 5,
+  },
+  {
     review_text: "Mack detailed my car and did an excellent job! I’ll have him do my truck as well!  He got a stain out that another detailer that wasn’t able too.  5 stars!!!",
     platform: "Facebook",
     rating: 5,
@@ -39,6 +49,11 @@ const reviews: Review[] = [
   {
     review_text: "Car looks better than I expected! He definitely puts lots of effort into his work! Even does the engine bay for a small add on. Loved the end result!!",
     platform: "Facebook",
+    rating: 5,
+  },
+  {
+    review_text: "This guy does an amazing job! Definitely loves what he does and it shows in his work! Goes above and beyond! Give him a shot! I promise he wont disappoint. 💯",
+    platform: "Google Buisnesses",
     rating: 5,
   },
   {

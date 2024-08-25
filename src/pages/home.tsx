@@ -113,7 +113,7 @@ const Home: React.FC = () => {
          onMouseMove={handleMouseMove}
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}>
-          <img id="Big_Pretty" src="/BigPrettyShop.jpg" alt="Big Pretty" className="big_pretty" />
+          <img id="Big_Pretty" src="/BigPrettyImage2.jpg" alt="Big Pretty" className="big_pretty" />
 
           <img id="Gold_squiggle_top" src="/Gold Squig9.png" alt="Gold squig" 
         className="gold_squig gold_squig_top"></img>

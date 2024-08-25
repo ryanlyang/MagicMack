@@ -209,7 +209,7 @@ p {
     height: 150px;
     transform: translate(-47%, -18%);
 
-    backdrop-filter: contrast(220%) saturate(110%) brightness(200%) grayscale(80%);
+    backdrop-filter: contrast(220%) saturate(110%) brightness(100%) grayscale(80%);
     mix-blend-mode: screen;
     z-index: 10;
   }
