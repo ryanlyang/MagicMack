@@ -28,7 +28,7 @@ const ContactInfo = () => {
             <div className="contact-section">
               <h2 className="contact-section-title">Contact:</h2>
               <p className="contact-detail">Phone: (207) 649-6120</p>
-              <p className="contact-detail">Email: magicmacks@gmail.com</p>
+              <p className="contact-detail">Email: mhuard30@gmail.com</p>
               <p className="contact-detail">
                 <a href="https://www.facebook.com/carshinesinme/" target="_blank" rel="noopener noreferrer"
                 className='link-thing'>Facebook</a>
@@ -61,7 +61,8 @@ const ContactInfo = () => {
         </div>
 
         <div className="contact-buttons">
-          <Link className="contact-button" to={'contact'} onClick={() => handleLinkClick('/')}>Book Today!</Link>
+          <a href="https://squareup.com/appointments/book/LKF8FD3ZHRTES" target="_blank" className='contact-button'>Book Today!</a>
+          {/* <Link className="contact-button" to={'contact'} onClick={() => handleLinkClick('/')}></Link> */}
           <Link className="contact-button" to={'about'} onClick={() => handleLinkClick('/about')}>Learn more about us!</Link>
           <Link className="contact-button" to={'services'} onClick={() => handleLinkClick('/services')}>View Services</Link>
           <Link className="contact-button" to={'gallery'} onClick={() => handleLinkClick('/gallery')}>View Gallery</Link>

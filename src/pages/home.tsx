@@ -4,27 +4,27 @@ import ImageCard from '../components/ImageCard';
 import Reviews from '../components/Reviews';
 
 const images = [
-  { dirty: '/Sliding_Images/cc185ee11c117276bb22e2fe40578769.jpg', clean: '/Sliding_Images/clean1.jpg' },
-  { dirty: '/Sliding_Images/Depositphotos_5986223_XL-1-scaled.webp', clean: '/Sliding_Images/clean2.jpg' },
-  { dirty: '/Sliding_Images/Dirty-Car-Contest-Winner.jpg', clean: '/Sliding_Images/clean3.jpg' },
-  { dirty: '/Sliding_Images/dirty-car-royalty-free-image-1645811725.jpg', clean: '/Sliding_Images/clean4.jpg' },
-  { dirty: '/Sliding_Images/dirty-old-cars-2048x1152-primary-16x9-1.jpg', clean: '/Sliding_Images/clean5.png' },
-  { dirty: '/Sliding_Images/images.jpg', clean: '/Sliding_Images/clean6.jpg' },
-  { dirty: '/Sliding_Images/maxresdefault.jpg', clean: '/Sliding_Images/clean7.jpg' },
-  { dirty: '/Sliding_Images/need-car-wash.jpg', clean: '/Sliding_Images/clean8.jpg' },
-  { dirty: '/Sliding_Images/THhrtkgF.jpg', clean: '/Sliding_Images/clean9.jpg' }
+  { dirty: '/SlidingImages/Before/black-int-b.jpeg', clean: '/SlidingImages/After/black-int-a.jpeg' },
+  { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
+  { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
+  { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
+  { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' },
+  { dirty: '/SlidingImages/Before/Mustang-b.jpg', clean: '/SlidingImages/After/mustang-a.jpg' },
+  { dirty: '/SlidingImages/Before/red-b2.jpg', clean: '/SlidingImages/After/red-a.jpg' },
+  { dirty: '/SlidingImages/Before/silver-b.jpg', clean: '/SlidingImages/After/silver-a.jpg' },
+  { dirty: '/SlidingImages/Before/tire-b.jpg', clean: '/SlidingImages/After/tire-a.jpg' }
 ];
 
 const images2 = [
-  { dirty: '/Sliding_Images/dirty10.png', clean: '/Sliding_Images/clean10.png' },
-  { dirty: '/Sliding_Images/dirty11.jpg', clean: '/Sliding_Images/clean11.jpg' },
-  { dirty: '/Sliding_Images/dirty12.jpg', clean: '/Sliding_Images/clean12.jpg' },
-  { dirty: '/Sliding_Images/dirty13.jpg', clean: '/Sliding_Images/clean13.jpg' },
-  { dirty: '/Sliding_Images/dirty14.jpg', clean: '/Sliding_Images/clean14.jpg' },
-  { dirty: '/Sliding_Images/dirty15.jpg', clean: '/Sliding_Images/clean15.jpg' },
-  { dirty: '/Sliding_Images/dirty16.jpg', clean: '/Sliding_Images/clean16.jpg' },
-  { dirty: '/Sliding_Images/dirty17.jpg', clean: '/Sliding_Images/clean17.jpg' },
-  { dirty: '/Sliding_Images/dirty18.jpg', clean: '/Sliding_Images/clean18.jpg' }
+  { dirty: '/SlidingImages/Before/black-int-b.jpeg', clean: '/SlidingImages/After/black-int-a.jpeg' },
+  { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
+  { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
+  { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
+  { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' },
+  { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
+  { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
+  { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
+  { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' }
 ];
 
 
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
       </div>
 
 
-      <div className='images-wrapper'>
+      {/* <div className='images-wrapper'>
         <div className='images_left_box image-container' style={{marginTop: '-8px' }}>
           <div className="image-wrapper">
             {images2.map((image, index) => (
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       
       <img src="/MagicWand2.png" alt="Magic Wand" className="magic-wand" />
 

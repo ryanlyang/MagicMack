@@ -58,7 +58,7 @@ const Services: React.FC = () => {
         </TabList>
         <TabPanels>
           <TabPanel>
-            <Flex align="center" justify="center" height="1000px">
+            <Flex align="center" justify="center" height="1200px">
               <Image
                 src="/Services/interior_page.jpg"
                 alt="Image 1"
@@ -70,7 +70,7 @@ const Services: React.FC = () => {
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex align="center" justify="center" height="1000px">
+            <Flex align="center" justify="center" height="1200px">
               <Image
                 src="/Services/exterior_page.jpg"
                 alt="Image 2"
@@ -82,7 +82,7 @@ const Services: React.FC = () => {
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex align="center" justify="center" height="1000px">
+            <Flex align="center" justify="center" height="1200px">
               <Image
                 src="/Services/Ceramic_Coatings.jpg"
                 alt="Image 3"

@@ -114,7 +114,8 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-          <Link to={'contact'}>
+          {/* <Link to={'contact'}> */}
+          <a href="https://squareup.com/appointments/book/LKF8FD3ZHRTES" target="_blank">
             <div className='button-container'>
               <div className="hover-image-container-top hover-image-container-book">
                 <img src="/Gold glow resize.png" alt="Hover Image" className=
@@ -126,7 +127,8 @@ const Header: React.FC = () => {
                 "hover-image-bottom book-click"></img>
               </div>
             </div>
-            </Link>
+            </a>
+            {/* </Link> */}
           </li>
           <li>
             {/* <div className='button-container'> */}
