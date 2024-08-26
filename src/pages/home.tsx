@@ -15,17 +15,17 @@ const images = [
   { dirty: '/SlidingImages/Before/tire-b.jpg', clean: '/SlidingImages/After/tire-a.jpg' }
 ];
 
-const images2 = [
-  { dirty: '/SlidingImages/Before/black-int-b.jpeg', clean: '/SlidingImages/After/black-int-a.jpeg' },
-  { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
-  { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
-  { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
-  { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' },
-  { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
-  { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
-  { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
-  { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' }
-];
+// const images2 = [
+//   { dirty: '/SlidingImages/Before/black-int-b.jpeg', clean: '/SlidingImages/After/black-int-a.jpeg' },
+//   { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
+//   { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
+//   { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
+//   { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' },
+//   { dirty: '/SlidingImages/Before/Tan-int-b.jpg', clean: '/SlidingImages/After/Tan-int-a.jpg' },
+//   { dirty: '/SlidingImages/Before/trunk-b.jpeg', clean: '/SlidingImages/After/trunk-a.jpeg' },
+//   { dirty: '/SlidingImages/Before/take-pride-b.jpg', clean: '/SlidingImages/After/take-pride-a.jpg' },
+//   { dirty: '/SlidingImages/Before/back-seat-b.jpg', clean: '/SlidingImages/After/back-seat-a.jpg' }
+// ];
 
 
 const Home: React.FC = () => {
