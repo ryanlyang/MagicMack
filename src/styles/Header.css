@@ -25,6 +25,8 @@
   padding: 0;
   display: flex;
   gap: 1rem;
+
+  justify-content: space-around;
 }
   
 .fixed-header nav ul li {
@@ -53,6 +55,35 @@ li{
   display: flex;
   align-items: center;
   justify-content: center; /* This will center the nav items horizontally */
+}
+
+@media (max-width: 768px) {
+  .fixed-header {
+    width: 95vw;
+    height: 15vh;
+    padding: 10px 5%;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .fixed-header nav ul {
+    /* flex-direction: column; */
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .fixed-header nav ul li a {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .button-container {
+    padding: 0.5rem;
+  }
+
+  .facebook, .instagram-icon {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .button-container {
